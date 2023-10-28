@@ -11,7 +11,7 @@ export default function ManualHeader() {
                 enableWeb3()
             }
         }
-    }, [])
+    }, [isWeb3Enabled])
 
     useEffect(() => {
         Moralis.onAccountChanged((account) => {
